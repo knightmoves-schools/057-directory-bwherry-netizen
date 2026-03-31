@@ -3,6 +3,7 @@
 public class DirectoryManager{
 
     public void Create(string directoryName){
-       Directory.CreateDirectory(directoryName, "test-directory");
+        string path = Path.Combine (directoryName, "test-directory");
+       Directory.CreateDirectory(path);
     }
 }
